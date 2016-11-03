@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2016-11-03T02:44:46Z</date>
+    <date>2016-11-03T02:56:45Z</date>
     <groups>
         <group>
             <name>..Templates</name>
@@ -30,7 +30,7 @@
                     <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>db.odbc.select[GetCountPathes,wsus-db]</key>
-                    <delay>3600</delay>
+                    <delay>30</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
@@ -50,9 +50,7 @@
                     <params>SELECT count(tbComputerTarget.FullDomainName) as [Count]&#13;
 FROM tbUpdateStatusPerComputer INNER JOIN tbComputerTarget ON tbUpdateStatusPerComputer.TargetID = tbComputerTarget.TargetID&#13;
 WHERE (NOT (tbUpdateStatusPerComputer.SummarizationState IN ('1', '4')))&#13;
-AND tbComputerTarget.FullDomainName = '{HOST.NAME}'&#13;
-GROUP BY tbComputerTarget.FullDomainName, tbComputerTarget.LastSyncTime&#13;
-ORDER BY COUNT(*) DESC</params>
+AND tbComputerTarget.FullDomainName = '{HOST.NAME}'</params>
                     <ipmi_sensor/>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
