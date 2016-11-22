@@ -13,5 +13,8 @@ AND tbComputerTarget.FullDomainName = '{HOST.NAME}'
 - 4 = Installed
 - 5 = Failed
 
+## Example
+![need_to_update](https://cloud.githubusercontent.com/assets/12140221/20521041/43008dae-b0a1-11e6-9f0e-e400ca404a10.PNG)
+
 
 
