@@ -6,7 +6,7 @@ FROM tbUpdateStatusPerComputer INNER JOIN tbComputerTarget ON tbUpdateStatusPerC
 WHERE (NOT (tbUpdateStatusPerComputer.SummarizationState IN ('1', '4')))
 AND tbComputerTarget.FullDomainName = '{HOST.NAME}'
 ```
-### SummarizationState:
+### Summarization state:
 - 1 = Not Installed
 - 2 = Needed
 - 3 = Downloaded
